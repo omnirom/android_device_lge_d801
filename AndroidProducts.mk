@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2011 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 
-include device/lge/g2-common/BoardConfigCommon.mk
-
-TARGET_KERNEL_CONFIG := msm8974_d801_defconfig
-
-TARGET_OTA_ASSERT_DEVICE := d801,g2,galbi
-
-G2_DTS_TARGET := msm8974-g2-tmo_us
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/omni_d801.mk
 
